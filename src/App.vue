@@ -7,7 +7,7 @@ import web3AuthContextConfig from "./web3authContext";
 
 <template>
   <v-app>
-    <div class="min-h-screen flex flex-col">
+    <div class="d-flex flex-column" style="min-height: 100vh;">
       <Web3AuthProvider :config="web3AuthContextConfig">
         <WagmiProvider>
           <Home />

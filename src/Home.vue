@@ -137,11 +137,6 @@ const userCredits = ref(0);
           :class="{ 'active': currentTab === 'home' }" 
           @click="currentTab = 'message'"
           >เอกสาร</button>
-          <button 
-          class="nav-pill-btn" 
-          :class="{ 'active': currentTab === 'home' }" 
-          @click="currentTab = 'upload'"
-          >Gemma E4B </button>
       </div>
       <v-spacer></v-spacer>
       <div class="app-navigation-pill d-flex align-center">
@@ -216,6 +211,30 @@ const userCredits = ref(0);
 </template>
 
 <style scoped>
+.app-dashboard-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px auto 20px auto;
+  background-color: #0b0f19;
+  background-image:
+    radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.1) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(16, 185, 129, 0.05) 0px, transparent 50%);
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.main-content {
+  padding: 0px;
+  flex: 1;
+  transition: padding-left 0.2s ease;
+  margin-bottom: 60px;
+}
+
 .border-b {
   border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
 }
